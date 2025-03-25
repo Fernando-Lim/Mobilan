@@ -418,3 +418,22 @@
 .copyright a:hover {
     color: var(--light);
 }
+
+.form-floating {
+    position: relative;
+}
+
+.dropdown-arrow {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 16px;
+}
+
+.dropdown-arrow::before {
+    content: '\25BC'; /* Unicode for down arrow */
+    font-size: 14px;
+    color: #555; /* Adjust color as needed */
+}
